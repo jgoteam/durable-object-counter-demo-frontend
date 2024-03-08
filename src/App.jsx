@@ -9,7 +9,7 @@ function App() {
 
   // wss://worker.josephliang.workers.dev/websocket
 
-  const SOCKET_URL = `ws://localhost:8787/websocket`;
+  const SOCKET_URL = `wss://worker.josephliang.workers.dev/websocket`;
   const socket = new WebSocket(SOCKET_URL);
 
   socket.onmessage = (e) => {
